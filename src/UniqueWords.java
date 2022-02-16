@@ -11,10 +11,8 @@ public class UniqueWords
    {
 	   int count = 0;
 	   for(int i = 0; i < list.size(); i++) {
-		   for(int j = 0; j < list.size(); j++) {
 			   count = (int)list.stream().distinct().count();
 		   }
-   }
 	   return count;
    }
 // once done, git add UniqueWords, git commit, git push
