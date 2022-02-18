@@ -27,6 +27,6 @@ public class UniqueWords
 	  * pineapple returns 6
 	  */
 	  int unique = countUnique(words);
-      System.out.println(words + " has " + unique + " unique words"); // returns 5
+      System.out.println(words + " has " + unique + " unique words");
    }
 }
