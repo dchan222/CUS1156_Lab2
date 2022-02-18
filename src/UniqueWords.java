@@ -9,14 +9,10 @@ public class UniqueWords
    */
    public static int countUnique(ArrayList<String> list)
    {
-	   int count = 0;
-	   for(int i = 0; i < list.size(); i++) {
-			   count = (int)list.stream().distinct().count();
-		   }
-	   return count;
+	   int count;
+	   return count = (int) list.stream().distinct().count();
    }
-// once done, git add UniqueWords, git commit, git push
-   // if git push comes out with an error, try git push <link of repository>
+
    public static void main(String[] args)
    {
       ArrayList <String> words = new ArrayList<>();
@@ -27,8 +23,10 @@ public class UniqueWords
 	  words.add("orange");
 	  words.add("sun");
 	  words.add("moon");
-	  
+	  /*words.add("pineapple");
+	  * pineapple returns 6
+	  */
 	  int unique = countUnique(words);
-      System.out.println(words + " has " + unique + " unique words"); // should return 5
+      System.out.println(words + " has " + unique + " unique words"); // returns 5
    }
 }
