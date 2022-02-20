@@ -24,8 +24,7 @@ public class UniqueWords
 	  words.add("sun");
 	  words.add("moon");
 	  /*words.add("pineapple");
-	  * pineapple returns 6
-	  */
+	  * pineapple returns 6 */
 	  int unique = countUnique(words);
       System.out.println(words + " has " + unique + " unique words");
    }
